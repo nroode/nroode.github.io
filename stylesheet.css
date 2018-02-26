@@ -1,0 +1,41 @@
+#backImg {
+    opacity : 0.7;
+    background-image: url('/Users/nroode/Documents/BeachCoders/nroode.github.io/images/IMG_6371.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 300px;
+
+}
+
+#backImg h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 0;
+    padding-bottom: 300px;
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section {
+    font-size: 2em;
+    color: rgb(25, 204, 189);
+}
+
+.nav-wrapper {
+    background-color: white;
+    color: grey;
+}
