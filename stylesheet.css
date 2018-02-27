@@ -43,7 +43,7 @@ body {
     
 }
 
-.section .material-icons {
+.section.one .material-icons {
     font-size: 5em;
     /* border: 1px solid rgb(94, 188, 199); */
     
@@ -55,7 +55,7 @@ body {
     
 }
 
-.section .material-icons:hover {
+.section.one .material-icons:hover {
     background-color: rgba(137, 204, 216, 0.719);
     
     
@@ -100,4 +100,20 @@ hr {
 .section.two {
     background-color: rgba(226, 206, 225, 0.555);
     color: white;
+}
+
+.section.two p {
+    font-size: 18px;
+}
+
+.section.two li {
+    padding-bottom: 30px;
+    /* background-color:  rgba(226, 206, 225, 0.74); */
+    margin: 10px;
+}
+
+.section.two .material-icons {
+    font-size: 3em;
+    color: white;
+    
 }
