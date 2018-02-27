@@ -1,12 +1,13 @@
 #backImg {
     opacity : 0.7;
-    background-image: url('/Users/nroode/Documents/BeachCoders/nroode.github.io/images/IMG_6371.jpg');
+    background-image: url('images/IMG_6371.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 h1 {
     font-size: 3em;
+    font-weight: 600;
     color: white;
     text-align: center;
     text-shadow: 3px 3px 3px black;
@@ -18,10 +19,12 @@ h1 {
 
 #backImg h2 {
     font-size: 2em;
+    font-weight: 600;
     color: white;
     text-align: center;
     text-shadow: 3px 3px 3px black;
     margin-top: 0;
+    margin-bottom: 0;
     padding-bottom: 300px;
 
 }
@@ -32,10 +35,69 @@ body {
 
 .section {
     font-size: 2em;
-    color: rgb(25, 204, 189);
+    color: rgb(94, 188, 199);
 }
 
 .nav-wrapper {
     background-color: white;
+    
+}
+
+.section .material-icons {
+    font-size: 5em;
+    /* border: 1px solid rgb(94, 188, 199); */
+    
+    border-radius: 100px;
+    padding: 20px;
+    /* background-color: rgba(211, 217, 218, 0.555); */
+    background-color: rgba(167, 213, 221, 0.555);
+    color: white;
+    
+}
+
+.section .material-icons:hover {
+    background-color: rgba(137, 204, 216, 0.719);
+    
+    
+}
+
+.row {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul a{
     color: grey;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.section{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+hr {
+    border-top: 2px dotted #8c8b8b;
+   
+}
+
+.section.two h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+
+.section.two {
+    background-color: rgba(226, 206, 225, 0.555);
+    color: white;
 }
