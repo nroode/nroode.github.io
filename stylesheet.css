@@ -40,7 +40,11 @@ body {
 
 .nav-wrapper {
     background-color: white;
-    
+}
+
+nav {
+    box-shadow: none;
+    color: grey;
 }
 
 .section.one .material-icons {
@@ -97,10 +101,6 @@ a h3:hover{
     padding: 0;
 }
 
-hr {
-    border-top: 2px dotted #8c8b8b;
-   
-}
 
 
 .section h2 {
@@ -127,6 +127,7 @@ hr {
     padding: 10px;
     background-color:  rgba(180, 152, 179, 0.219);
 border: 1px solid white;
+border-radius: 5px;
     margin: 3%;
 }
 
@@ -143,6 +144,7 @@ width:100%;
 float: left;
 /* margin-bottom: 10px; */
 opacity: 0.7;
+border-radius: 5px;
 }
 
 
@@ -161,12 +163,12 @@ opacity: 0.7;
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 0;
+    margin: 10px 0px;
 }
 
 .projDetail {
     display: none;
-    text-align: center;
+    text-align: left;
     background: rgba(176, 176, 196, 0.925);
     position: absolute;
     top: 0;
@@ -175,11 +177,29 @@ opacity: 0.7;
     bottom: 0;
     color: white;
     font-size: 1.5rem;
+    padding-top: 20%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 20%;
+    font-size: 18px;
+    border-radius: 5px;
   }
+
   .post-preview:hover .projDetail {
     display: block;
   }
 
   .nav-wrapper {
       box-shadow: none;
+  }
+
+  .detailTitle {
+      text-transform: uppercase;
+     
+      font-weight: bold;
+      background-color: rgba(119, 119, 134, 0.959);
+  }
+
+  nav.brand-logo {
+      color: grey;
   }
