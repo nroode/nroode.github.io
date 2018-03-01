@@ -61,7 +61,7 @@ body {
 
 .row {
     text-align: center;
-    text-transform: uppercase;
+    
 }
 
 nav ul a{
@@ -73,7 +73,23 @@ h3 {
     font-size: 28px;
     margin-top: 20px;
     font-weight: 700;
+    text-transform: uppercase;
+    
 }
+a h3 {
+    color: rgba(137, 204, 216, 0.719); 
+}
+
+/* a:link{
+    color: rgba(137, 204, 216, 0.719); 
+    
+} */
+a h3:hover{
+    color: rgba(101, 158, 168, 0.822);
+}
+/* a:active{
+    color: rgba(167, 213, 221, 0.555);
+} */
 
 .section.one{
     margin-top: 200px;
@@ -85,6 +101,7 @@ hr {
     border-top: 2px dotted #8c8b8b;
    
 }
+
 
 .section h2 {
     text-align: center;
@@ -108,7 +125,7 @@ hr {
 
 .section.two li {
     padding: 10px;
-    background-color:  rgba(180, 152, 179, 0.336);
+    background-color:  rgba(180, 152, 179, 0.219);
 border: 1px solid white;
     margin: 3%;
 }
@@ -132,6 +149,12 @@ opacity: 0.7;
 .section.four {
     background-color: rgba(156, 150, 156, 0.315);
     color: white;
+}
+
+.section.four li {
+    padding: 2%;
+    margin: 1%;
+    background-color: rgba(156, 150, 156, 0.171);
 }
 
 .post-preview {

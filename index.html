@@ -59,22 +59,34 @@
                 <div id="mainSec">
                     <div class="col m4 s12">
                         <span class="icon">
-                            <i class="material-icons">person</i>
+                            <a href="#two">
+                                <i class="material-icons">person</i>
+                            </a>
                         </span>
                         <span class="sectionHead">
                             <br>
-                            <a href="https://nroode.github.io.section.two"><h3>My Story</h3></a>
+                            <a href="#two">
+                                <h3>My Story</h3>
+                            </a>
                         </span>
                     </div>
                     <div class="col m4 s12">
-                        <i class="material-icons">work</i>
+                        <a href="#three">
+                            <i class="material-icons">work</i>
+                        </a>
                         <br>
-                        <h3>Projects</h3>
+                        <a href="#three">
+                            <h3>Projects</h3>
+                        </a>
                     </div>
                     <div class="col m4 s12">
-                        <i class="material-icons">star</i>
+                        <a href="#four">
+                            <i class="material-icons">star</i>
+                        </a>
                         <br>
-                        <h3>Skills</h3>
+                        <a href="#four">
+                            <h3>Skills</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -82,7 +94,7 @@
         </div>
     </div>
 
-    <div class="section two">
+    <div class="section two" id="two">
 
         <div class="container">
 
@@ -92,9 +104,9 @@
                     <ul>
                         <li>
                             <i class="material-icons">school</i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id justo vel tellus accumsan mollis.
-                                Etiam venenatis ante ac enim dignissim eleifend. In urna orci, luctus ac urna eget, aliquam
-                                pretium nibh. </p>
+                            <p>B.A. Psychology, Minor Art History (UCLA)
+                                <br> M.Sc. Marketing (University of Birmingham, UK)
+                            </p>
                         </li>
                         <li>
                             <i class="material-icons">business</i>
@@ -117,7 +129,7 @@
         </div>
     </div>
 
-    <div class="section three">
+    <div class="section three" id="three">
         <div class="container">
             <h2>Projects</h2>
             <div class="row">
@@ -125,7 +137,7 @@
                     <figure class="post-preview">
                         <img src="images/ToDo.png">
                         <div class="projDetail">
-                            Test 123 Test 123
+                            Project: To-Do List App Goal: To create a functional to-do list.
                         </div>
                     </figure>
                 </div>
@@ -133,7 +145,7 @@
                     <figure class="post-preview">
                         <img src="images/Itunes.png">
                         <div class="projDetail">
-                            Test 123 Test 123
+                            Project: iTunes API Goal: To create a web app that searches through iTunes API.
                         </div>
                     </figure>
                 </div>
@@ -202,13 +214,35 @@
         </div>
     </div>
 
-    <div class="section four">
+    <div class="section four" id="four">
         <div class="container">
             <h2>Skills</h2>
-
+            <ul>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    JavaScript
+                </li>
+                <li>
+                    JQuery
+                </li>
+                <li>
+                    Materialize CSS
+                </li>
+            </ul>
         </div>
 
     </div>
+
+    <div class="section contact" id="contact">
+        <h2>Contact Me</h2>
+
+    </div>
+
 
     <!-- Page Content goes here -->
     </div>
@@ -217,6 +251,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
     <script>
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000)
+                    }
+                }
+            });
 
     </script>
 
