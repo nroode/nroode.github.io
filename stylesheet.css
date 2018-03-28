@@ -1,142 +1,239 @@
 #backImg {
-    opacity : 0.7;
-    background-image: url('images/IMG_6371.jpg');
+    background-image: url('images/Cloud.jpg');
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    
 }
 
 h1 {
     font-size: 3em;
-    font-weight: 600;
+    text-transform: uppercase;
     color: white;
-    text-align: center;
-    text-shadow: 3px 3px 3px black;
+    /* text-shadow: 2px 2px 2px black,
+                4px 4px 8px black,
+                4px 4px 12px black; */
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 300px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Ribeye Marrow', cursive;
+    border-bottom: 2px solid white;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5px;
 
 }
 
-#backImg h2 {
-    font-size: 2em;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    text-shadow: 3px 3px 3px black;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 300px;
+/* #logo {
+    font-size: 5em;
+} */
+
+
+nav {
+    background-color: #2323232f;
+    height: 30px;
+   /* margin-top: 30px; */
+   line-height: 1;
+   /* position: absolute; */
+   font-size: 18px;
+   border-bottom: 1px solid white;
 
 }
+
+nav li {
+    font-size: 18px;
+}
+
+#conIcons {
+    font-size: 40px;
+    float: right;
+    margin-right: 3%;
+    position: relative;
+}
+
+#conIcons a {
+    color: white;
+
+}
+
+.headings {
+    /* border-radius: 50%;
+    height: 75%;
+    width: 75%;
+    margin: 0 10%; */
+    /* display: block; */
+width: 60%;
+margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#circle {
+    border: 5px solid white;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    background: rgba(21, 32, 44, 0.274);
+}
+
+/* #circle {
+    border: 5px solid white;
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(21, 32, 44, 0.274);
+} */
+
+
+.container.one {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+/* #headColor {
+    margin: 0 auto;
+    width: 100%;
+    text-shadow: 3px 3px 15px rgba(18, 35, 88, 0.74);
+} */
+
+.overlay {
+    background-color: #23232338;
+    z-index: -1;
+    position: absolute;;
+    top: 0;
+    left: 0;
+    width: 100%;
+   height: 100%;
+}
+
+.headings h2{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    /* text-shadow: 2px 2px 2px black,
+    4px 4px 8px black,
+    4px 4px 12px black; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    width: 70%;
+    margin: auto;
+}
+
+
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
 }
 
 .section {
     font-size: 2em;
-    color: rgb(94, 188, 199);
-}
-
-.nav-wrapper {
-    background-color: white;
-}
-
-nav {
-    box-shadow: none;
     color: grey;
-}
-
-.section.one .material-icons {
-    font-size: 5em;
-    /* border: 1px solid rgb(94, 188, 199); */
-    
-    border-radius: 100px;
-    padding: 20px;
-    /* background-color: rgba(211, 217, 218, 0.555); */
-    background-color: rgba(167, 213, 221, 0.555);
-    color: white;
-    
-}
-
-.section.one .material-icons:hover {
-    background-color: rgba(137, 204, 216, 0.719); 
+    text-align: center;
+    padding-bottom: 75px;
 }
 
 .row {
     text-align: center;
-    
 }
 
-nav ul a{
-    color: grey;
-    text-transform: uppercase;
-}
+
 
 h3 {
-    font-size: 28px;
-    margin-top: 20px;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    
+    display: inline;
+    float: left;  
 }
+
 a h3 {
-    color: rgba(137, 204, 216, 0.719); 
+    color: rgb(253, 253, 253); 
+    margin-left: 5px;
+    margin-top: 0;
+    /* border: 1px solid white; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    /* text-shadow: 3px 3px 15px rgba(18, 35, 88, 0.74); */
+    transition: all 1.0s;
+    -webkit-transition: all 1.0s;
+    -moz-transition: all 1.0s;
 }
 
-/* a:link{
-    color: rgba(137, 204, 216, 0.719); 
-    
+/* .section.one {
+    margin-left: 3%;
 } */
+
 a h3:hover{
-    color: rgba(101, 158, 168, 0.822);
+    color:rgb(245, 180, 142); 
 }
-/* a:active{
-    color: rgba(167, 213, 221, 0.555);
-} */
-
-.section.one{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    padding: 0;
-}
-
-
 
 .section h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
+  
+    font-size: 80px;
     text-transform: uppercase;
-    padding: 20px;
-    padding-bottom: 80px;
-    
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: rgb(26, 102, 133);
+    font-family: 'Nixie One', cursive;
+    text-align: left;
+    border-bottom: 3px solid rgb(26, 102, 133);
+    margin-bottom: 80px;
 }
 
 
 .section.two {
-    background-color: rgba(226, 206, 225, 0.555);
-    color: white;
+    color: rgb(12, 33, 41);
+    /* background: linear-gradient(to right, #0c4c5f, #91c3e5); */
+    /* background-color: rgba(12, 33, 41, 0.295); */
+    /* margin: 7%; */
+    /* text-shadow: 1px 1px 10px rgba(92, 84, 86, 0.445); */
+    /* margin-bottom: 50px; */
 }
 
 .section.two p {
-    font-size: 18px;
+    font-size: 22px;
+    text-align: justify;
+    color:  rgb(61, 59, 59);
+}
+
+.hello {
+    font-size: 36px;
+    text-align: right;
+}
+
+.section.two img {
+    padding: 7px;
+    /* border: 5px solid rgba(247, 179, 101, 0.952); */
+    /* box-shadow: 1px 1px 10px rgb(153, 127, 143); */
+    float: right;
+   
+    margin-left: 3%;
+    width: 200px;
 }
 
 .section.two li {
-    padding: 10px;
-    background-color:  rgba(180, 152, 179, 0.219);
-border: 1px solid white;
+    
+    /* background-color:  rgba(189, 162, 188, 0.171); */
 border-radius: 5px;
     margin: 3%;
-}
-
-.section.two .material-icons {
-    font-size: 3em;
-    color: white;
-    float: left;
-    padding-right: 20px;
-    
 }
 
 .section.three img{
@@ -145,18 +242,23 @@ float: left;
 /* margin-bottom: 10px; */
 opacity: 0.7;
 border-radius: 5px;
-}
+/* box-shadow: 1px 1px 25px rgba(128, 128, 128, 0.514); */
 
+}
+/* .section.three {
+    background-color: rgb(12, 33, 41);
+} */
 
 .section.four {
-    background-color: rgba(156, 150, 156, 0.315);
-    color: white;
+    color: grey;
 }
 
 .section.four li {
     padding: 2%;
     margin: 1%;
-    background-color: rgba(156, 150, 156, 0.171);
+    background-color: rgb(51, 141, 177);
+    color: white;
+    border-radius: 50px;
 }
 
 .post-preview {
@@ -164,42 +266,85 @@ border-radius: 5px;
     overflow: hidden;
     position: relative;
     margin: 10px 0px;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 25px rgba(128, 128, 128, 0.514); */
+    
 }
 
 .projDetail {
     display: none;
-    text-align: left;
-    background: rgba(176, 176, 196, 0.925);
+    text-align: center;
+    /* font-weight: bold; */
+    background: rgba(245, 197, 158, 0.904); 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     color: white;
-    font-size: 1.5rem;
+    font-size: 46px;
     padding-top: 20%;
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 20%;
-    font-size: 18px;
     border-radius: 5px;
+
+    transition: all 1.6s;
+    -webkit-transition: all 1.6s;
+    -moz-transition: all 1.6s;
   }
 
   .post-preview:hover .projDetail {
     display: block;
-  }
-
-  .nav-wrapper {
-      box-shadow: none;
+    line-height: 1;
+    
   }
 
   .detailTitle {
-      text-transform: uppercase;
      
+      margin-right: 3%;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-top: 5px;
+      font-family: 'Nixie One', cursive;
       font-weight: bold;
-      background-color: rgba(119, 119, 134, 0.959);
+      text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.514);
   }
 
-  nav.brand-logo {
-      color: grey;
-  }
+ span.detailSubTitle {
+    font-size: 20px;
+    margin-right: 3%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    
+}
+
+
+.detailSubTitle li {
+    background: rgba(245, 178, 124, 0.904); 
+    border-radius: 30px;
+    position: inline;
+    float: left;
+    padding: 3px 6px;
+    margin: 3px;
+}
+
+  .section.contact {
+    font-size: 6em;
+    text-align: left;
+  
+    color: grey;
+    display: block;
+    position: relative;
+}
+
+.section.contact a {
+    color: grey;
+    text-decoration: none;
+}
+
+.section.four li {
+    position: relative;
+    float: left;
+}

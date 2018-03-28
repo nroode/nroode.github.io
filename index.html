@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Raleway|Ribeye+Marrow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Document</title>
 </head>
@@ -15,105 +16,113 @@
 <body>
 
 
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">
-                NR
-                <ul class="right hide-on-med-and-down">
+    <div id="backImg">
+
+        <nav>
+            <div class="nav-wrapper">
+                <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+                <ul class="hide-on-med-and-down">
                     <li>
-                        <a href="#contact">
-                            <i class="material-icons">email</i>
+                        <a href="#two">
+                            <h3>My Story</h3>
                         </a>
                     </li>
-
-                </ul>
-        </div>
-    </nav>
-
-
-
-    <div id="backImg">
-        <h1>Natalie Roode</h1>
-        <h2>Striving to Create Beautiful and Functional Web Pages</h2>
-    </div>
-
-    <div class="container">
-
-        <div class="section one">
-
-            <div class="row">
-                <div id="mainSec">
-                    <div class="col m4 s12">
-                        <span class="icon">
-                            <a href="#two">
-                                <i class="material-icons">person</i>
-                            </a>
-                        </span>
-                        <span class="sectionHead">
-                            <br>
-                            <a href="#two">
-                                <h3>My Story</h3>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col m4 s12">
-                        <a href="#three">
-                            <i class="material-icons">work</i>
-                        </a>
-                        <br>
+                    <li>
                         <a href="#three">
                             <h3>Projects</h3>
                         </a>
-                    </div>
-                    <div class="col m4 s12">
-                        <a href="#four">
-                            <i class="material-icons">star</i>
-                        </a>
-                        <br>
+                    </li>
+                    <li>
                         <a href="#four">
                             <h3>Skills</h3>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <h3>Contact</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="conIcons">
+            <a href="nroode@gmail.com">
+                <i class="fas fa-envelope-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/natalie-roode-2b19628/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="www.github.com">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.instagram.com/nroode/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="container one">
+
+            <div class="overlay"></div>
+            <div id="circle"></div>
+            <div class="headings">
+                <h1>
+                    <span id="logo">NR</span>
+                    <br> Natalie Roode</h1>
+                <h2>Web Developer, Creator of Beautiful and Functional Web Pages</h2>
             </div>
 
         </div>
     </div>
+    <!-- <div class="section one">
+        <a href="#two">
+                <h3>My Story</h3>
+            </a>
+            <a href="#three">
+                <h3>Projects</h3>
+            </a>
+            <a href="#four">
+                <h3>Skills</h3>
+            </a>
+            <a href="#contact">
+                <h3>Contact</h3>
+            </a>
+        </div> -->
+
+
+
+
+
+
 
     <div class="section two" id="two">
 
         <div class="container">
-
             <h2>My Story</h2>
-            <div class="row">
-                <div class="col m12">
-                    <ul>
-                        <li>
-                            <i class="material-icons">school</i>
-                            <p>B.A. Psychology, Minor Art History (UCLA)
-                                <br> M.Sc. Marketing (University of Birmingham, UK)
-                            </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">business</i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id justo vel tellus accumsan mollis.
-                                Etiam venenatis ante ac enim dignissim eleifend. In urna orci, luctus ac urna eget, aliquam
-                                pretium nibh. </p>
-                        </li>
-                        <li>
-                            <i class="material-icons">business</i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id justo vel tellus accumsan mollis.
-                                Etiam venenatis ante ac enim dignissim eleifend. In urna orci, luctus ac urna eget, aliquam
-                                pretium nibh. </p>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
+            <ul>
+                <li>
+                    <img src="images/ProfilePic.jpg" class="circle">
+                    <!-- <i class="fas fa-graduation-cap"></i> -->
+                    <div class="hello">Hi, I'm Natalie Roode.</div>
+                    <p>
+                        <br> My background is in psychology and marketing (I’ve always had an interest in human behavior and
+                        what makes people tick).
+                        <br> Before my web development career, I worked in consumer insights, helping businesses make smart decisions
+                        with consumer needs in mind.
+                        <br>
+                        <br> I worked closely with programmes to implement our online surveys and process data, troubleshooting
+                        issues along the way.
+                        <br>
+                        <br> At LRW, I learned how to pick out the most important data points out of thousands and thousands,
+                        to tell a story . I excelled at utilizing graphics and presenting data in a way that would be quick
+                        and easy for our busy clients to read and understand. I realized I was passionate about using design
+                        to improve the audience's experience.
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
+
 
     <div class="section three" id="three">
         <div class="container">
@@ -123,9 +132,16 @@
                     <figure class="post-preview">
                         <img src="images/ToDo.png">
                         <div class="projDetail">
-                            <span class="detailTitle">Project</span> To-Do List App
+                            <span class="detailTitle"> To-Do List</span>
                             <br>
-                            <span class="detailTitle">Goal</span> To create a functional to-do list.
+                            <span class="detailSubTitle">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                </ul>
+                            </span>
                         </div>
                     </figure>
                 </div>
@@ -133,29 +149,21 @@
                     <figure class="post-preview">
                         <img src="images/Itunes.png">
                         <div class="projDetail">
-                            <span class="detailTitle">Project</span> iTunes API
+                            <span class="detailTitle">iTunes API</span>
                             <br>
-                            <span class="detailTitle">Goal</span> To create a web app that searches through iTunes API.
+                            <span class="detailSubTitle">HTML, CSS, JavaScipt, JQuery</span>
                         </div>
                     </figure>
                 </div>
                 <div class="col m4 s12">
                     <figure class="post-preview">
-                        <img src="images/Itunes.png">
+                        <img src="images/puurfectmatch.png">
                         <div class="projDetail">
                             Test 123 Test 123
                         </div>
                     </figure>
                 </div>
-           
-                <div class="col m4 s12">
-                    <figure class="post-preview">
-                        <img src="images/ToDo.png">
-                        <div class="projDetail">
-                            Test 123 Test 123
-                        </div>
-                    </figure>
-                </div>
+
                 <div class="col m4 s12">
                     <figure class="post-preview">
                         <img src="images/ToDo.png">
@@ -172,31 +180,16 @@
                         </div>
                     </figure>
                 </div>
-   
                 <div class="col m4 s12">
                     <figure class="post-preview">
-                        <img src="images/Itunes.png">
+                        <img src="images/ToDo.png">
                         <div class="projDetail">
                             Test 123 Test 123
                         </div>
                     </figure>
                 </div>
-                <div class="col m4 s12">
-                    <figure class="post-preview">
-                        <img src="images/Itunes.png">
-                        <div class="projDetail">
-                            Test 123 Test 123
-                        </div>
-                    </figure>
-                </div>
-                <div class="col m4 s12">
-                    <figure class="post-preview">
-                        <img src="images/Itunes.png">
-                        <div class="projDetail">
-                            Test 123 Test 123
-                        </div>
-                    </figure>
-                </div>
+
+
             </div>
 
         </div>
@@ -221,15 +214,28 @@
                 <li>
                     Materialize CSS
                 </li>
+                <li>
+                    Bootstrap
+                </li>
             </ul>
         </div>
-
     </div>
+    <br>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Me</h2>
 
-    </div>
+    <!-- <div class="section contact" id="contact">
+       
+        <div class="container">
+                <h2>Contact Me</h2>
+            <div id="conIcons">
+                <i class="fas fa-envelope-square"></i>
+                <a href="https://www.linkedin.com/in/natalie-roode-2b19628/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <i class="fab fa-github-square"></i>
+            </div>
+        </div>
+    </div> -->
 
 
     <!-- Page Content goes here -->
