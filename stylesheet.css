@@ -8,9 +8,16 @@
     
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(12, 33, 41);
+    font-weight: 300;
+}
+
 h1 {
     font-size: 3em;
     text-transform: uppercase;
+    letter-spacing: .2rem;
     color: white;
     /* text-shadow: 2px 2px 2px black,
                 4px 4px 8px black,
@@ -19,8 +26,8 @@ h1 {
     margin-top: 0;
     text-align: center;
     z-index: 1;
-    font-family: 'Ribeye Marrow', cursive;
-    border-bottom: 2px solid white;
+    font-family: 'Nixie One', cursive;
+    border-bottom: 1px solid white;
     width: 70%;
     margin: auto;
     padding-bottom: 5px;
@@ -34,15 +41,18 @@ nav {
    line-height: 1;
    /* position: absolute; */
    border-bottom: 1px solid white;
+   
 
 }
 
 nav ul a {
     font-size: 12px;
+    
 }
 
-nav li {
+nav li a {
     line-height: 30px;
+    font-weight: 300;
 }
 
 
@@ -70,14 +80,14 @@ margin: auto;
 }
 
 #circle {
-    border: 5px solid white;
+    border: 2px solid white;
     position: relative;
     display: inline-block;
     width: 100%;
     height: 0;
     padding: 50% 0;
     border-radius: 50%;
-    background: rgba(21, 32, 44, 0.274);
+    /* background: rgba(21, 32, 44, 0.274); */
 }
 
 /* #circle {
@@ -116,6 +126,7 @@ margin: auto;
 
 .headings h2{
     font-size: 20px;
+    font-weight: 300;
     color: white;
     text-align: center;
     /* text-shadow: 2px 2px 2px black,
@@ -130,10 +141,7 @@ margin: auto;
 
 
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(12, 33, 41);
-}
+
 
 .section {
     font-size: 2em;
@@ -150,18 +158,21 @@ body {
 
 h3 {
     font-size: 18px;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-transform: uppercase;
     display: inline;
 }
 
 a h3 {
     color: rgb(253, 253, 253); 
+    font-weight: 300;
+font-size: 14px;
+
     margin-left: 5px;
     margin-top: 0;
     /* border: 1px solid white; */
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     padding-top:5px;
     padding-bottom: 5px;
     /* text-shadow: 3px 3px 15px rgba(18, 35, 88, 0.74); */
@@ -182,26 +193,31 @@ a h3:hover{
   
     font-size: 60px;
     text-transform: uppercase;
-    font-weight: 600;
+    /* font-weight: 600; */
     padding-top: 50px;
     padding-bottom: 10px;
     color: rgb(26, 102, 133);
     font-family: 'Nixie One', cursive;
     text-align: left;
-    border-bottom: 3px solid rgb(26, 102, 133);
+    border-bottom: 2px solid rgb(26, 102, 133);
     margin-bottom: 80px;
 }
 
 
 .section.two {
-    color: rgb(12, 33, 41);
+    /* background: url('http://www.powerpointhintergrund.com/uploads/grid-background-image-10.png'); */
+    /* background-size: cover; */
+    /* background-color: rgba(12, 39, 49, 0.726); */
+    
+    color: rgb(26, 102, 133);
+    /* background-color: rgb(69, 63, 77); */
 }
 
 
 .section.two li {
     font-size: 20px;
     text-align: justify;
-    color:  rgb(12, 33, 41);
+    color:  rgb(26, 102, 133);
     border-radius: 5px;
 }
 
@@ -211,15 +227,17 @@ li.liHead {
 
 .hello {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+   
     /* line-height: 1; */
 }
 
 .section.two img {
     /* border: 5px solid rgba(247, 179, 101, 0.952); */
     /* box-shadow: 1px 1px 10px rgb(153, 127, 143); */
-   
+   float: left;
     margin-bottom: 20px;
+    margin-right: 20px;
     width: 200px;
    
 }
@@ -234,17 +252,10 @@ border-radius: 5px;
 
 }
 
-.section.four {
-    color: grey;
-}
+/* .section.three {
+    background-color: rgb(20, 48, 59);
+} */
 
-.section.four li {
-    padding: 2%;
-    margin: 1%;
-    background-color: rgb(51, 141, 177);
-    color: white;
-    border-radius: 50px;
-}
 
 .post-preview {
     width: 100%;
@@ -260,13 +271,17 @@ border-radius: 5px;
     display: none;
     text-align: center;
     /* font-weight: bold; */
-    background:  rgba(248, 184, 131, 0.904);
+    background-color:  rgba(219, 231, 236, 0.966);
+    /* background-color: rgb(20, 48, 59); */
+
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    color: white;
+    color: rgb(26, 102, 133);
+   
     font-size: 36px;
     padding-top: 20%;
     padding-left: 2%;
@@ -306,7 +321,8 @@ border-radius: 5px;
 
 
 .detailSubTitle li {
-    background: rgba(245, 178, 124, 0.904); 
+    background-color: rgba(255, 255, 255, 0.877);
+    color: rgb(26, 102, 133);
     border-radius: 30px;
     position: inline;
     float: left;
@@ -328,7 +344,14 @@ border-radius: 5px;
     text-decoration: none;
 }
 
+
+.section.four {
+    color: grey;
+}
+
 .section.four li {
-    position: relative;
-    float: left;
+    padding: 2%;
+    margin: 1%;
+    color: rgb(51, 141, 177);
+   text-align: left;
 }
