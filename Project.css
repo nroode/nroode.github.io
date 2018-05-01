@@ -1,0 +1,84 @@
+body {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(12, 33, 41);
+}
+
+h1 {
+    color:  rgb(26, 102, 133);
+    font-family: 'Vidaloka', serif;
+    border-bottom: 1px solid rgb(38, 187, 197);
+    font-size: 32px;
+    text-align: center;
+}
+
+.heading {
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Vidaloka', serif;
+    
+}
+
+nav {
+    background-color: transparent;
+    box-shadow: none;
+    height: 32px;
+   line-height: 1;
+   
+}
+
+.nav-wrapper {
+    position: absolute;
+    z-index:999999999;
+}
+
+
+nav ul h3 {
+    color: rgb(12, 33, 41);
+}
+
+nav li h3 {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+img {
+    width: 90%;
+    margin: 5%;
+    
+}
+
+.description {
+    background-color: rgb(38, 187, 197);
+    color: white;
+    margin: 0;
+    
+    padding: 5%;
+    text-align: left;
+     
+}
+
+.clear {
+    clear:both;
+}
+
+.row .col {
+    padding: 0px;
+}
+
+.row {
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.479);
+    text-align: center;
+}
+
+.row .col a {
+    margin: 5px;
+    background-color:  rgb(247, 198, 92);
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
