@@ -1,3 +1,20 @@
+/* Color Palette 
+#26E4E8 turquoise
+#6D19AA violet
+#C3CFB4 beige
+#B72883 medium violet red
+#C78096 rosy brown
+*/
+
+/* 
+8FD9CD light green
+4E1CC8 bright puepleblue
+7022D2 purple
+9D1C96  marroon
+D58E76 light orange
+*/
+
+
 
 html {
     font-size: 62.5%;
@@ -8,7 +25,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     /* font-family: 'Fira Mono', monospace; */
-    color: rgb(12, 33, 41);
+    color: rgb(51, 48, 56);
     /* padding: 3rem;
     background-color: rgb(12, 33, 41); */
 }
@@ -65,13 +82,7 @@ body {
 nav {
     background-color: transparent;
     box-shadow: none;
-    height: 3.8rem;
-   /* margin-top: 30px; */
-   line-height: 1;
-   text-transform: uppercase;
-   /* position: absolute; */
-   /* border-bottom: 1px solid white; */
-   
+   text-transform: uppercase;   
 }
 
 .nav-wrapper {
@@ -79,14 +90,10 @@ nav {
 }
 
 
-
-nav ul a {
-    font-size: 1.2rem;
-    
-}
-
 nav li a {
-    line-height: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 4;
 }
 
 
@@ -97,12 +104,13 @@ nav li a {
 h1 {
     font-size: 6rem;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: 1.1rem;
     color: white;   
     margin-bottom: 0;
     margin-top: 0;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
+    text-align: center;
     /* font-family: 'Vidaloka', serif; */
     /* border-bottom: 1px solid rgb(247, 198, 92); */
 }
@@ -125,7 +133,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
 line-height: 1.5;
-
+text-align: center;
 
 }
 
@@ -134,7 +142,7 @@ line-height: 1.5;
     font-size: 2rem;
 
 
-    color: rgb(12, 33, 41);
+    /* color: rgb(12, 33, 41); */
     text-align: center;
     padding-bottom: 7.5rem;
     background-color: white;
@@ -182,56 +190,51 @@ a h3:hover{
 
     padding: 2rem 4rem;
     margin-bottom: 10rem;
-    color: rgb(26, 102, 133);
+    color: #4E1CC8;
     font-family: 'Chivo', sans-serif;
    
-    text-align: center;
 }
 
 .section h2 {
 margin-bottom: 15rem;
 }
 
-.section.two { 
-    color: rgb(26, 102, 133);
-    margin: 0rem 7rem -10rem 7rem;
+.section.about { 
+    margin: 5rem 7rem;
 }
 
 
-.section.two li {
-    font-size: 1.6rem;
+.section.about li {
+    font-size: 1.7rem;
     text-align: justify;
-    color:  rgb(26, 102, 133);
     border-radius: .5rem;
+    color: rgb(51, 48, 56);
 }
 
 li.liHead {
-    color: rgb(12, 33, 41);
+    color: rgb(51, 48, 56);
 }
 
 .hello {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     text-align: left;
-    color: rgb(38, 187, 197);
-
+    color: #4E1CC8;
+    font-weight: 400;
+    letter-spacing: 3px;
     font-family: 'Chivo', sans-serif;
-
     padding-bottom: 2rem;
-    
-    /* border-bottom: 10px solid rgba(247, 198, 92, 0.603); */
-   width: 94%;
-   margin-right: 6%;
-    /* line-height: 1; */
+
 }
 
-.section.two img {
+.section.about img {
    float: left;
     width: 24rem;
-    margin: 3rem;
+    margin-bottom: 1.5rem;
+    transform: translateX(-3rem);
 }
 
 .prof-pic img{
-   -webkit-shape-outside: shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+   -webkit-shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
    
     -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -239,65 +242,86 @@ li.liHead {
 
 }
 
-.section.three img{
+.section.projects img{
 width:100%;
 float: left;
 
+}
+
+.section.projects {
+    margin-top: 0;
 }
 
 .post-preview {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 1rem 0rem;
- 
+    margin: .75rem 0rem;
+    backface-visibility: hidden; 
+
+}
+
+.post-preview .card-side {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    backface-visibility: hidden; 
 }
 
 .projDetail {
-    display: none;
-    text-align: center;
-    /* font-weight: bold; */
-    /* background-color:  rgba(219, 231, 236, 0.966); */
-
-    background-color:  rgba(11, 43, 56, 0.829);
+    display: transparent;
+    background-color: #4E1CC8;
 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    color: white;
-   
-    font-size: 3.6rem;
-    padding-top: 20%;
-    
-    transition: all 2.6s;
-    -webkit-transition: all 2.6s;
-    -moz-transition: all 2.6s;
+
+    transform: translateX(-101%);
   }
+
+.card-side {
+    backface-visibility: hidden; 
+}
 
   .post-preview:hover .projDetail {
     display: block;
     line-height: 1;
-    
-    
+    transform: translateX(0);
+   
   }
+
+.projDetail-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 3.6rem;
+    color: white;
+
+}
 
   .detailTitle {
     font-family: 'Chivo', sans-serif;
-    padding: 1rem 2rem;
-      margin-top: .5rem;
+    display: block; 
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    letter-spacing: .5rem;
+    padding: 1rem .5rem;
+      /* margin-top: .5rem; */
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 2.6rem;
   }
 
  span.detailSubTitle {
     font-size: 1.6rem;
     margin-right: 5%;
     margin-left: 5%;
-    
-    /* padding-right: 5%;
-    padding-left: 5%; */
+    display: block;
     
 }
 
@@ -307,35 +331,85 @@ float: left;
     
 }
 
-.section.four {
+.proj-links {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.6rem;
+       
+}
+
+.proj-links a {
+    color: white;
+}
+
+.proj-links .demo-link a {
+    float: left;
+    padding: .3rem .7rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 3rem;
+    display: inline-block;
+}
+
+.proj-links .github-link a {
+    float: right;
+    margin: 3rem;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.proj-links .demo-link a:hover {
+   color: rgb(247, 198, 92); 
+   border: 1px solid rgb(247, 198, 92); 
+}
+
+.proj-links .github-link a:hover {
+    
+    color: rgb(247, 198, 92);
+   
+}
+
+
+.section.skills {
     
     padding: 20rem 0rem;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(25, 26, 25, 0.438), 
-        rgba(30, 31, 31, 0)), 
+        rgba(38, 187, 197, 0.932), 
+        rgba(38, 187, 197, 0.514)), 
         url('images/low-poly-texture-108.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 15rem, 100% 80rem, 0 100%);
+    clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
 }
 
-.section.four#four {
+.section.skills h3 {
+    font-size: 2.3rem;
+    letter-spacing: 5px;
     color: white;
+    text-transform: uppercase;
+    padding-bottom: 8rem;
 }
 
-.section.four li {
-    padding: 2%;
-   
+.section.skills ul {
+    margin-bottom: 6rem;
+}
+
+.section.skills li {
+
+   display: inline-block;
     color: white;
-    background-color: rgb(247, 198, 92);
+padding: 0 1rem;
    text-align: center;
 
-   font-size: 1.8rem;
-   text-transform: uppercase;
-   width: 30rem;
-   margin: 1rem auto;
+}
+
+.skills .svg-inline--fa{
+    size: 3rem;
+    margin-right: .8rem;
 }
 
 
@@ -348,8 +422,6 @@ float: left;
 }
 
 .section.contact a {
-    color: grey;
-    
     text-decoration: none;
 }
 
