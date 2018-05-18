@@ -28,6 +28,9 @@ body {
     color: rgb(51, 48, 56);
     /* padding: 3rem;
     background-color: rgb(12, 33, 41); */
+    position: absolute;
+    width: 100%;
+   
 }
 
 #backImg {
@@ -47,36 +50,136 @@ body {
 }
 
 @media screen and (max-width: 599px) {
+    #backImg {
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); 
+    }
+    
     h1 {
-        font-size: 3.4rem;
+        font-size: 4.3rem;
     }
 
     .headings {
         top: 10%;
     }
 
-}
+    .headings h2{
+        font-size: 1.7rem;
+    }
 
-@media screen and (min-width: 600px) {
-    h1 {
-        font-size: 6.8rem;
+    .headings {
+        top: 40%;
+        
+    
+    }
+
+    .section.about { 
+        margin: 5rem 1rem;
+    }
+
+    .hello {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .section.about img {
+        float: none;
+         width: 13rem;
+         margin-bottom: 0rem;
+         transform: translateX(0rem);
+         border-radius: 50%;
+     }
+
+     .section h2 {
+        margin-bottom: 5rem;
+        }
+
+        .section {
+            font-size: 1.8rem;
+            padding-bottom: 2rem;
+            margin-top: 2rem;
+    }
+
+    .section.skills {
+        padding: 20rem 0rem;
+        clip-path: polygon(0 0, 100% 0, 100% 65rem, 0 80%);
+    }
+
+    .section.projects {
+        margin-top: 5rem;
     }
 
 }
 
-/* .header {
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba(25, 26, 25, 0.438), 
-        rgba(30, 31, 31, 0)), 
-        url(../img/hero.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-} */
+@media screen and (min-width: 600px) {
+    #backImg {
+        height: 95vh;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+    }
+    
+    h1 {
+        font-size: 6rem;
+    }
 
+    .headings h2{
+        font-size: 2.2rem;
+    }
+
+    .headings {
+        top: 35%;
+        
+    
+    }
+
+    .section.about { 
+        margin: 5rem 7rem;
+    }
+
+    .hello {
+        font-size: 2.3rem;
+        letter-spacing: 3px;
+        text-align: left;
+        
+    }
+
+    .section.about img {
+        float: left;
+         width: 24rem;
+         margin-bottom: 1.5rem;
+         transform: translateX(-3rem);
+     }
+     
+     .prof-pic img{
+        -webkit-shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+         shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        
+         -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+         clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+     
+     }
+
+     .section h2 {
+        margin-bottom: 15rem;
+        
+        }
+
+    .section {
+            font-size: 2rem;
+            padding-bottom: 7.5rem;
+            margin-top: 10rem;
+    }
+
+    .section.skills {
+        padding: 20rem 0rem;
+        clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
+    }
+
+    .section.projects {
+        margin-top: 5rem;
+    }
+
+}
 
 
 nav {
@@ -97,12 +200,12 @@ nav li a {
 }
 
 
-.container.one {
+/* .container.one {
     padding-bottom: 10%;
-}
+} */
 
 h1 {
-    font-size: 6rem;
+    
     text-transform: uppercase;
     letter-spacing: 1.1rem;
     color: white;   
@@ -118,34 +221,29 @@ h1 {
 
 .headings {
     position: absolute;
-    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 
 }
 
 .headings h2{
-    font-size: 2.2rem;
+
     font-weight: 300;
     letter-spacing: .5rem;
     color: white;
     margin-top: 0;
     margin-bottom: 0;
-line-height: 1.5;
-text-align: center;
+    line-height: 1.5;
+    text-align: center;
 
 }
 
 
 .section {
-    font-size: 2rem;
-
-
-    /* color: rgb(12, 33, 41); */
+    /* font-size: 2rem; */
     text-align: center;
-    padding-bottom: 7.5rem;
     background-color: white;
+    /* margin-top: 10rem; */
 }
 
 .row {
@@ -178,30 +276,25 @@ a h3:hover{
     color:rgb(247, 198, 92);
 }
 
-.section {
-   margin-top: 10rem;
-}
 
 .heading {
-    font-size: 3.2rem;
+    /* font-size: 3.2rem; */
     text-transform: uppercase;
 
     letter-spacing: 1rem;
 
-    padding: 2rem 4rem;
+    /* padding: 2rem 4rem; */
     margin-bottom: 10rem;
     color: #4E1CC8;
     font-family: 'Chivo', sans-serif;
    
 }
 
-.section h2 {
-margin-bottom: 15rem;
-}
 
-.section.about { 
+
+/* .section.about { 
     margin: 5rem 7rem;
-}
+} */
 
 
 .section.about li {
@@ -216,31 +309,16 @@ li.liHead {
 }
 
 .hello {
-    font-size: 2.3rem;
-    text-align: left;
+
     color: #4E1CC8;
     font-weight: 400;
-    letter-spacing: 3px;
+    
     font-family: 'Chivo', sans-serif;
     padding-bottom: 2rem;
 
 }
 
-.section.about img {
-   float: left;
-    width: 24rem;
-    margin-bottom: 1.5rem;
-    transform: translateX(-3rem);
-}
 
-.prof-pic img{
-   -webkit-shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-   
-    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-
-}
 
 .section.projects img{
 width:100%;
@@ -248,9 +326,7 @@ float: left;
 
 }
 
-.section.projects {
-    margin-top: 0;
-}
+
 
 .post-preview {
     width: 100%;
@@ -374,7 +450,6 @@ float: left;
 
 .section.skills {
     
-    padding: 20rem 0rem;
     background-image: linear-gradient(
         to right bottom, 
         rgba(38, 187, 197, 0.932), 
@@ -382,8 +457,12 @@ float: left;
         url('images/low-poly-texture-108.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
+        background-attachment: fixed; 
+     clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
+}
+
+.section .skills h2 {
+    color: white;
 }
 
 .section.skills h3 {
