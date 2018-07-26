@@ -37,13 +37,15 @@ body {
     /* background-image: url('images/cloud.jpg'); */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
         rgba(25, 26, 25, 0.438), 
         rgba(30, 31, 31, 0)), 
         url('images/low-poly-texture-108.png');
+    
+    /* background-attachment: fixed; */
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     
@@ -133,7 +135,7 @@ body {
     }
 
     .section.about { 
-        margin: 5rem 7rem;
+        margin: 5rem 7rem 0rem 7rem;
     }
 
     .hello {
@@ -171,8 +173,10 @@ body {
     }
 
     .section.skills {
-        padding: 20rem 0rem;
-        clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
+        /* padding-bottom: 0rem; */
+        padding-top: 0rem;
+        margin-top: 0rem;
+        
     }
 
     .section.projects {
@@ -448,41 +452,43 @@ float: left;
 }
 
 
-.section.skills {
-    
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba(38, 187, 197, 0.932), 
-        rgba(38, 187, 197, 0.514)), 
-        url('images/low-poly-texture-108.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed; 
-     clip-path: polygon(0 0, 100% 15rem, 100% 85rem, 0 100%);
+.inner-frame {
+    /* border: 1px solid #4E1CC8; */
+    padding: 5rem;
+    background-color: rgb(241, 241, 247);
 }
 
-.section .skills h2 {
+
+/* .section .skills h2 {
     color: white;
-}
+} */
 
 .section.skills h3 {
     font-size: 2.3rem;
     letter-spacing: 5px;
-    color: white;
+
+    /* color: white; */
+    color: #4E1CC8;
     text-transform: uppercase;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
 }
 
-.section.skills ul {
-    margin-bottom: 6rem;
+.section.skills h2 {
+    margin-bottom: 4rem;
 }
+
+/* .section.skills ul {
+    margin-bottom: 6rem;
+    
+} */
 
 .section.skills li {
 
    display: inline-block;
-    color: white;
-padding: 0 1rem;
-   text-align: center;
+    /* color: white; */
+    color: #4E1CC8;
+/* padding: 0 .5rem; */
+   
 
 }
 
@@ -495,9 +501,17 @@ padding: 0 1rem;
 .section.contact {
     
     text-align: left;
-  background-color: rgb(38, 187, 197);
-    padding-top: 5rem;
-
+  /* background-color: rgb(38, 187, 197); */
+  background-image: linear-gradient(
+        to right bottom, 
+        rgba(25, 26, 25, 0.438), 
+        rgba(30, 31, 31, 0)), 
+        url('images/low-poly-texture-108.png');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+    padding-top: 25rem;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 }
 
 .section.contact a {
